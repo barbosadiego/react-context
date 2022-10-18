@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Login = ({login}) => {
+const Login = () => {
   return (
     <>
-      <button onClick={() => login('joao')}>Login</button>
+      <button >Login</button>
     </>
   );
 };
