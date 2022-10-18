@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Userbar from './components/Userbar';
+import { useState } from 'react';
 
-const App = (props) => {
+const App = () => {
+
+  const [usuario, setUsuario] = useState('diego');
+
   return (
     <>
-      <h1>React Context</h1>
+      <h1>React Prop-Drilling</h1>
+      <Userbar usuario={usuario} login={setUsuario}/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
